@@ -1,2 +1,2 @@
-html{margin:0;padding:0;font-size:62.5%;-webkit-box-sizing:border-box;box-sizing:border-box;font-family:"Josefin Sans", sans-serif}body{background-color:#faecdb}header{position:relative;height:100vh;background-image:-webkit-gradient(linear, left top, right bottom, ),url(../media/australiacontinent.jpg);background-image:linear-gradient(to right bottom),url(../media/australiacontinent.jpg);background-position:top;background-size:cover}
+html{margin:0;padding:0;font-size:62.5%;-webkit-box-sizing:border-box;box-sizing:border-box;font-family:'Libre Franklin', sans-serif}body{background-color:#e7dbbf}header{position:fixed;height:100vh;width:197vh}.heading{-ms-flex-pack:distribute;justify-content:space-around;font-size:35vh}
 /*# sourceMappingURL=style.min.css.map */
