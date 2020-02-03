@@ -4,7 +4,28 @@ $colors: (
     primary-dark: #523f31,   
 );
 
+$tablet: 600px;
+$laptop: 900px;
+$desktop: 1100px;
+
 @function color ($color-name) {
     @return map-get($colors,$color-name);
 }
 
+@mixin tablet {
+    @media(min-width: #{$tablet}){
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media(min-width: #{$laptop}){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media(min-width: #{$desktop}){
+        @content;
+    }
+}
