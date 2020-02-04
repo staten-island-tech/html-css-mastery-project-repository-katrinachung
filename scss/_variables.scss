@@ -1,40 +1,31 @@
 $colors: (
-    primary: rgb(177, 120, 55),
-    primary-light: rgb(170, 136, 97),
-    primary-dark: rgb(155, 87, 9),
-    grey: rgb(122, 103, 103),
-    black: rgb(34, 27, 27)
+  primary: #45a29e,
+  primary-light: #66fcf1,
+  grey: #c5c6c7,
+  primary-dark: #1f2833,
+  black: #0b0c10
 );
-
 $phone:600px;
-$tablet:900px;
-$laptop:1100px;
-$desktop:1100px;
-
+$tablet: 900px;
+$laptop: 1100px;
+$desktop: 1100px;
+ 
 @function color($color-name) {
-    @return map-get($colors, $color-name);
+  @return map-get($colors, $color-name);
 }
 
-@mixin phone{
-    @media (min-width: #{$phone}) {
-        @content;
-    }
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
 }
-
-@mixin tablet{
-    @media (min-width: #{$tablet}) {
-        @content;
-    }
+@mixin laptop {
+  @media (min-width: #{$laptop}) {
+    @content;
+  }
 }
-
-@mixin laptop{
-    @media (min-width: #{$laptop}) {
-        @content;
-    }
-}
-
-@mixin desktop{
-    @media (min-width: #{$desktop}) {
-        @content;
-    }
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
 }
