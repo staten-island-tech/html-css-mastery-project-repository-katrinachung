@@ -95,6 +95,11 @@ html {
   } */
 }
 
+body {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(170, 126, 75, 0.5)), to(rgba(126, 91, 40, 0.5)));
+  background-image: linear-gradient(to right bottom, rgba(170, 126, 75, 0.5), rgba(126, 91, 40, 0.5));
+}
+
 .header {
   position: relative;
   height: 100vh;
@@ -134,12 +139,6 @@ html {
   width: 100vw;
   text-align: center;
   font-weight: 700;
-  -webkit-animation-name: slide-in;
-          animation-name: slide-in;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
 }
 
 .header .heading-primary .heading-primary-main {
@@ -171,6 +170,7 @@ html {
   margin: 0 auto;
   text-align: center;
   color: white;
+  text-decoration: none;
 }
 
 @media (min-width: 1100px) {
@@ -179,25 +179,10 @@ html {
   }
 }
 
-@-webkit-keyframes slide-in {
-  0% {
-    -webkit-transform: translateX(-200rem);
-            transform: translateX(-200rem);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@keyframes slide-in {
-  0% {
-    -webkit-transform: translateX(-200rem);
-            transform: translateX(-200rem);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
+.header .heading-primary .heading-primary-sub:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 /*# sourceMappingURL=main.css.map */
