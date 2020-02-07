@@ -1,5 +1,6 @@
 @import "_variables.scss";
-@import "_usergallery.scss";
+@import "_history.scss";
+
 html {
   margin: 0;
   padding: 0;
@@ -24,7 +25,7 @@ body {
   background-image: linear-gradient(to right bottom,
       rgba(color(primary), 0.5),
       rgba(color(primary-light), 0.5)),
-    url(../../media/australia-23500_1280.png);
+    url(../../dist/media/header-outline.png);
   background-position: top;
   background-size: 150vh 100vh;
 

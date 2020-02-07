@@ -1,4 +1,4 @@
-.user-gallery {
+.history {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,36 +15,36 @@
 }
 
 @media (min-width: 1100px) {
-  .user-gallery {
+  .history {
     height: 90vh;
   }
 }
 
-.user-gallery-header {
+.history-header {
   font-size: 2rem;
   color: white;
   text-transform: uppercase;
 }
 
 @media (min-width: 900px) {
-  .user-gallery-header {
+  .history-header {
     font-size: 3rem;
   }
 }
 
 @media (min-width: 1100px) {
-  .user-gallery-header {
+  .history-header {
     font-size: 4rem;
   }
 }
 
 @media (min-width: 1100px) {
-  .user-gallery-header {
+  .history-header {
     font-size: 5rem;
   }
 }
 
-.user-gallery-gallery {
+.history-gallery {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,7 +62,7 @@
 }
 
 @media (min-width: 1100px) {
-  .user-gallery-gallery {
+  .history-gallery {
     width: 90%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -71,14 +71,14 @@
   }
 }
 
-.user-gallery-gallery .user-gallery-image {
+.history-gallery .history-image {
   width: 90%;
   padding: 1rem;
 }
 
 @media (min-width: 1100px) {
-  .user-gallery-gallery .user-gallery-image {
-    height: 30rem;
+  .history-gallery .history-image {
+    height: 60rem;
     width: auto;
   }
 }
@@ -103,8 +103,8 @@ body {
 .header {
   position: relative;
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(170, 126, 75, 0.5)), to(rgba(252, 157, 102, 0.5))), url(../../media/australia-23500_1280.png);
-  background-image: linear-gradient(to right bottom, rgba(170, 126, 75, 0.5), rgba(252, 157, 102, 0.5)), url(../../media/australia-23500_1280.png);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(170, 126, 75, 0.5)), to(rgba(252, 157, 102, 0.5))), url(../../dist/media/header-outline.png);
+  background-image: linear-gradient(to right bottom, rgba(170, 126, 75, 0.5), rgba(252, 157, 102, 0.5)), url(../../dist/media/header-outline.png);
   background-position: top;
   background-size: 150vh 100vh;
   -webkit-clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
