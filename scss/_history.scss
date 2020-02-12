@@ -24,6 +24,17 @@
       font-size: 5rem;
     }
   }
+
+  .history-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+    text-shadow: rgba(color(grey), 0.5);
+    size: 7vh;
+  }
   
   .history-gallery {
     width: 100%;

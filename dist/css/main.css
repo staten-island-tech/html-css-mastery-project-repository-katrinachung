@@ -44,6 +44,25 @@
   }
 }
 
+.history-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  color: white;
+  text-shadow: rgba(194, 185, 171, 0.5);
+  size: 7vh;
+}
+
 .history-gallery {
   width: 100%;
   display: -webkit-box;
