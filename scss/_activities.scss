@@ -1,18 +1,16 @@
 @import "_variables.scss";
 
 .activities{
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    height: 100vh;
 }
 
-.activities-header{
+.activities-heading{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
     color: white;
-    font-size: 2rem;
-    position: relative;
     text-transform: uppercase;
+    font-size: 2rem;
     @include tablet{
         font-size: 3rem;
     }
@@ -24,24 +22,72 @@
     }
 }
 
-.activity-cards{
-    color: inherit;
-    width: calc(33% - 2rem);
-    height: 400px;
-    perspective: 1000px;
-    margin: 1rem;
-    position: relative;
+.card-container{
+    padding: 0;
+    border: 0;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    @include phone{
+        flex-direction: column;
+    }
+    @include tablet{
+        flex-direction: column;
+    }
+    @include laptop{
+        flex-direction: row;
+    }
+    @include desktop{
+        flex-direction: row;
+    }
 }
 
-.card-side-front, .card-side-back{
-    display: flex;
-    border-radius: 6px;
-    background-position: center;
+.card{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-side {
+    z-index: 1;
+    transition: all 1s;
+    font-size: 3rem;
+    color: white;
+    box-shadow: 0 0 2.5rem 2.5rem rgba(181, 211, 14, 0.37);
+    backface-visibility: hidden;
+    @include phone{
+        height: 15rem;
+        width: 25rem;
+        border-radius: 2rem;
+    }
+    @include tablet{
+        height: 25rem;
+        width: 35rem;
+        border-radius: 3rem;
+    }
+    @include laptop{
+        height: 50rem;
+        width: 30rem;
+    }
+    @include phone{
+        height: 60rem;
+        width: 40rem;
+        border-radius: 4rem;
+    }
+}
+
+.card-side-front{
     background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    display: flex;
     justify-content: center;
-    text-align: center;
     align-items: center;
-    position: absolute;
-    height: 100%;
-    width: 100%;
+    
 }
