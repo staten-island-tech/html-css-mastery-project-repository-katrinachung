@@ -2,9 +2,7 @@
 
 .activity{
     height: 100vh;
-    background-repeat: repeat;
-    background-size: cover;
-    background-position: center;
+    position: relative;
     border-radius: 5rem;
     margin-bottom: 1rem;
 }
@@ -27,7 +25,7 @@
     }
 }
 
-.card-container{
+.cards-container{
     padding: 0;
     border: 0;
     height: 100vh;
@@ -146,24 +144,24 @@
 
 #card-side-back-1{
     background-image: linear-gradient(
-        to right rgba(19, 129, 202, 0.363),
-        rgba(83, 205, 221, 0.418)
+        to right rgba(34, 202, 19, 0.363),
+        rgba(136, 226, 163, 0.418)
     ),
     url(../../dist/media/kangaroo.jpeg);
 }
 
 #card-side-back-2{
     background-image: linear-gradient(
-        to right rgba(19, 129, 202, 0.363),
-        rgba(83, 205, 221, 0.418)
+        to right rgba(159, 19, 202, 0.363),
+        rgba(159, 83, 221, 0.418)
     ),
     url(../../dist/media/sightsee.jpeg);
 }
 
 #card-side-back-3{
     background-image: linear-gradient(
-        to right rgba(19, 129, 202, 0.363),
-        rgba(83, 205, 221, 0.418)
+        to right rgba(50, 209, 156, 0.363),
+        rgba(129, 216, 228, 0.418)
     ),
     url(../../dist/media/outdooractivity.jpg);
 }

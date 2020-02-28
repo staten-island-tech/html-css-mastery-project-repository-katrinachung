@@ -121,9 +121,7 @@
 
 .activity {
   height: 100vh;
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
+  position: relative;
   border-radius: 5rem;
   margin-bottom: 1rem;
 }
@@ -156,7 +154,7 @@
   }
 }
 
-.card-container {
+.cards-container {
   padding: 0;
   border: 0;
   height: 100vh;
@@ -173,7 +171,7 @@
 }
 
 @media (min-width: 600px) {
-  .card-container {
+  .cards-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -185,7 +183,7 @@
 }
 
 @media (min-width: 900px) {
-  .card-container {
+  .cards-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -197,7 +195,7 @@
 }
 
 @media (min-width: 1100px) {
-  .card-container {
+  .cards-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -206,7 +204,7 @@
 }
 
 @media (min-width: 1100px) {
-  .card-container {
+  .cards-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -338,18 +336,18 @@
 }
 
 #card-side-back-1 {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(83, 205, 221, 0.418))), url(../../dist/media/kangaroo.jpeg);
-  background-image: linear-gradient(to right rgba(19, 129, 202, 0.363), rgba(83, 205, 221, 0.418)), url(../../dist/media/kangaroo.jpeg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(136, 226, 163, 0.418))), url(../../dist/media/kangaroo.jpeg);
+  background-image: linear-gradient(to right rgba(34, 202, 19, 0.363), rgba(136, 226, 163, 0.418)), url(../../dist/media/kangaroo.jpeg);
 }
 
 #card-side-back-2 {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(83, 205, 221, 0.418))), url(../../dist/media/sightsee.jpeg);
-  background-image: linear-gradient(to right rgba(19, 129, 202, 0.363), rgba(83, 205, 221, 0.418)), url(../../dist/media/sightsee.jpeg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(159, 83, 221, 0.418))), url(../../dist/media/sightsee.jpeg);
+  background-image: linear-gradient(to right rgba(159, 19, 202, 0.363), rgba(159, 83, 221, 0.418)), url(../../dist/media/sightsee.jpeg);
 }
 
 #card-side-back-3 {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(83, 205, 221, 0.418))), url(../../dist/media/outdooractivity.jpg);
-  background-image: linear-gradient(to right rgba(19, 129, 202, 0.363), rgba(83, 205, 221, 0.418)), url(../../dist/media/outdooractivity.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(129, 216, 228, 0.418))), url(../../dist/media/outdooractivity.jpg);
+  background-image: linear-gradient(to right rgba(50, 209, 156, 0.363), rgba(129, 216, 228, 0.418)), url(../../dist/media/outdooractivity.jpg);
 }
 
 .card:hover .card-side-front {
