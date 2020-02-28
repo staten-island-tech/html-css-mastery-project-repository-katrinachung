@@ -2,6 +2,11 @@
 
 .activity{
     height: 100vh;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5rem;
+    margin-bottom: 1rem;
 }
 
 .activity-heading{
@@ -59,7 +64,7 @@
     transition: all 1s;
     font-size: 3rem;
     color: white;
-    box-shadow: 0 0 2.5rem 2.5rem rgba(181, 211, 14, 0.37);
+    box-shadow: 0 0 2.5rem 2.5rem rgba(241, 110, 3, 0.37) inset;
     backface-visibility: hidden;
     @include phone{
         height: 15rem;
@@ -106,7 +111,7 @@
         to bottom rgba(10, 43, 65, 0.144),
         rgba(153, 110, 16, 0.164)
     ),
-    url(../dist/media/koala.jpeg);
+    url(../../dist/media/koala.jpeg);
 }
 
 #card-side-front-2{
@@ -114,7 +119,7 @@
         to bottom rgba(10, 43, 65, 0.144),
         rgba(153, 110, 16, 0.164)
     ),
-    url(../dist/media/sightsee1.jpeg);
+    url(../../dist/media/sightsee1.jpeg);
 }
 
 #card-side-front-3{
@@ -122,7 +127,7 @@
         to bottom rgba(10, 43, 65, 0.144),
         rgba(153, 110, 16, 0.164)
     ),
-    url(../dist/media/camping.png);
+    url(../../dist/media/camping.png);
 }
 
 .card-side-back{
@@ -144,7 +149,7 @@
         to right rgba(19, 129, 202, 0.363),
         rgba(83, 205, 221, 0.418)
     ),
-    url(../dist/media/kangaroo.jpeg);
+    url(../../dist/media/kangaroo.jpeg);
 }
 
 #card-side-back-2{
@@ -152,7 +157,7 @@
         to right rgba(19, 129, 202, 0.363),
         rgba(83, 205, 221, 0.418)
     ),
-    url(../dist/media/sightsee.jpeg);
+    url(../../dist/media/sightsee.jpeg);
 }
 
 #card-side-back-3{
@@ -160,7 +165,7 @@
         to right rgba(19, 129, 202, 0.363),
         rgba(83, 205, 221, 0.418)
     ),
-    url(../dist/media/outdooractivity.jpg);
+    url(../../dist/media/outdooractivity.jpg);
 }
 
 .card:hover .card-side-front{
