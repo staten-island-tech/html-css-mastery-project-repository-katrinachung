@@ -1,31 +1,31 @@
 @import "_variables.scss";
 
-.activity{
+.activity {
     height: 100vh;
     position: relative;
     border-radius: 5rem;
     margin-bottom: 1rem;
 }
 
-.activity-heading{
+.activity-heading {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
     color: white;
     text-transform: uppercase;
     font-size: 2rem;
-    @include tablet{
+    @include tablet {
         font-size: 3rem;
     }
-    @include laptop{
+    @include laptop {
         font-size: 4rem;
     }
-    @include desktop{
+    @include desktop {
         font-size: 5rem;
     }
 }
 
-.cards-container{
+.cards-container {
     padding: 0;
     border: 0;
     height: 100vh;
@@ -33,23 +33,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include phone{
+    @include phone {
         flex-direction: column;
         justify-content: space-evenly;
     }
-    @include tablet{
+    @include tablet {
         flex-direction: column;
         justify-content: space-evenly;
     }
-    @include laptop{
+    @include laptop {
         flex-direction: row;
     }
-    @include desktop{
+    @include desktop {
         flex-direction: row;
     }
 }
 
-.card{
+.card {
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
@@ -65,27 +65,20 @@
     box-shadow: 0 0 2.5rem 2.5rem rgba(241, 110, 3, 0.37) inset;
     backface-visibility: hidden;
     @include phone{
-        height: 15rem;
-        width: 25rem;
-        border-radius: 2rem;
-    }
-    @include tablet{
-        height: 25rem;
-        width: 35rem;
-        border-radius: 3rem;
+        height: 30rem;
+        width: 30rem;
     }
     @include laptop{
         height: 50rem;
         width: 30rem;
     }
-    @include phone{
+    @include desktop{
         height: 60rem;
         width: 40rem;
-        border-radius: 4rem;
     }
 }
 
-.card-side-front{
+.card-side-front {
     background-size: cover;
     background-position: center;
     top: 0;
@@ -93,18 +86,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include phone{
+    @include phone {
         font-size: 2rem;
     }
-    @include tablet{
+    @include tablet {
         font-size: 3rem;
     }
-    @include desktop{
+    @include desktop {
         font-size: 4rem;
     }
 }
 
-#card-side-front-1{
+#card-side-front-1 {
     background-image: linear-gradient(
         to bottom rgba(10, 43, 65, 0.144),
         rgba(153, 110, 16, 0.164)
@@ -112,7 +105,7 @@
     url(../../dist/media/koala.jpeg);
 }
 
-#card-side-front-2{
+#card-side-front-2 {
     background-image: linear-gradient(
         to bottom rgba(10, 43, 65, 0.144),
         rgba(153, 110, 16, 0.164)
@@ -120,7 +113,7 @@
     url(../../dist/media/sightsee1.jpeg);
 }
 
-#card-side-front-3{
+#card-side-front-3 {
     background-image: linear-gradient(
         to bottom rgba(10, 43, 65, 0.144),
         rgba(153, 110, 16, 0.164)
@@ -128,7 +121,7 @@
     url(../../dist/media/camping.png);
 }
 
-.card-side-back{
+.card-side-back {
     position: absolute;
     background-size: cover;
     background-position: center;
@@ -142,7 +135,7 @@
     align-items: center;
 }
 
-#card-side-back-1{
+#card-side-back-1 {
     background-image: linear-gradient(
         to right rgba(34, 202, 19, 0.363),
         rgba(136, 226, 163, 0.418)
@@ -150,7 +143,7 @@
     url(../../dist/media/kangaroo.jpeg);
 }
 
-#card-side-back-2{
+#card-side-back-2 {
     background-image: linear-gradient(
         to right rgba(159, 19, 202, 0.363),
         rgba(159, 83, 221, 0.418)
@@ -158,7 +151,7 @@
     url(../../dist/media/sightsee.jpeg);
 }
 
-#card-side-back-3{
+#card-side-back-3 {
     background-image: linear-gradient(
         to right rgba(50, 209, 156, 0.363),
         rgba(129, 216, 228, 0.418)
@@ -166,11 +159,11 @@
     url(../../dist/media/outdooractivity.jpg);
 }
 
-.card:hover .card-side-front{
+.card:hover .card-side-front {
     transform: rotateY(-180deg);
 }
 
-.card:hover .card-side-back{
+.card:hover .card-side-back {
     transform: rotateY(0deg);
 }
 
