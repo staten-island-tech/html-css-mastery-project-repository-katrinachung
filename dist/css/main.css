@@ -396,7 +396,7 @@
       align-self: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 92vh;
+  height: 75vh;
 }
 
 .box {
@@ -423,9 +423,43 @@
   padding: 15px;
 }
 
-.icon {
+.box-content .icon {
   color: #8293ff;
   font-size: 48px;
+  padding: 15px;
+}
+
+.box-content .title {
+  font-size: 24px;
+  color: #8293ff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.box-content .description {
+  color: #8293ff;
+  font-size: 25px;
+  height: 20%;
+}
+
+a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.box:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.box:hover .icon .title .description {
+  color: white;
+  -webkit-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out;
 }
 
 html {

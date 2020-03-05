@@ -1,0 +1,48 @@
+@import "_variables.scss";
+
+.activities{
+    display: flex;
+    padding-top: 20vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.activities-header{
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    @include tablet{
+        font-size: 3rem;
+    }
+    @include laptop{
+        font-size: 4rem;
+    }
+    @include desktop{
+        font-size: 5rem;
+    }
+}
+.cards{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-side{
+    height: 500px;
+    width: 300px;
+    font-size: 15px;
+    color: white;
+    backface-visibility: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+}
+.card-side-front{
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 1s;
+}
+
