@@ -89,25 +89,3 @@ a{
     }
 }
 
-.travel-gallery {
-    width: 15vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    @include laptop {
-      //height: 60%;
-      width: 90%;
-      flex-direction: row;
-    }
-  
-    .travel-image {
-      width: 90%;
-      padding: 1rem;
-      @include laptop {
-        height: 40rem;
-        width: auto;
-      }
-    }
-}
