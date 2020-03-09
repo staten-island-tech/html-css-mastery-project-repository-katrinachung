@@ -79,12 +79,15 @@ a{
     height: 100%;
     top: 0;
     left: 0;
+    target-name: new;
+    target-new: tab;
 }
 
 .box:hover {
     box-shadow: none;
-    .icon .title .description{
-        color: white;
+    .icon 
+    .title 
+    .description{
         transition: .3s all ease-in-out;
     }
 }

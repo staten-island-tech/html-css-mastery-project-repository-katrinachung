@@ -459,6 +459,8 @@ a {
   height: 100%;
   top: 0;
   left: 0;
+  target-name: new;
+  target-new: tab;
 }
 
 .box:hover {
@@ -466,8 +468,9 @@ a {
           box-shadow: none;
 }
 
-.box:hover .icon .title .description {
-  color: white;
+.box:hover .icon
+.title
+.description {
   -webkit-transition: .3s all ease-in-out;
   transition: .3s all ease-in-out;
 }
