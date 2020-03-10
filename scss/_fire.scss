@@ -1,0 +1,26 @@
+@import "_variables.scss";
+
+.fire {
+    height: 60vh;
+    position: relative;
+    border-radius: 5rem;
+    margin-bottom: 1rem;
+}
+
+.fire-header {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    @include tablet {
+        font-size: 3rem;
+    }
+    @include laptop {
+        font-size: 4rem;
+    }
+    @include desktop {
+        font-size: 5rem;
+    }
+}

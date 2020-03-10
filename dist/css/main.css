@@ -475,6 +475,41 @@ a {
   transition: .3s all ease-in-out;
 }
 
+.fire {
+  height: 60vh;
+  position: relative;
+  border-radius: 5rem;
+  margin-bottom: 1rem;
+}
+
+.fire-header {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+@media (min-width: 900px) {
+  .fire-header {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .fire-header {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .fire-header {
+    font-size: 5rem;
+  }
+}
+
 html {
   margin: 0;
   padding: 0;
