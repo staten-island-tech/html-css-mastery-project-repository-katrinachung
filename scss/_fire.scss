@@ -1,10 +1,13 @@
 @import "_variables.scss";
 
 .fire {
-    height: 60vh;
+    height: 50vh;
     position: relative;
     border-radius: 5rem;
     margin-bottom: 1rem;
+    border-style: inset;
+    border-width: 1vh;
+    border-color: rgba(color(primary-dark), 0.5);
 }
 
 .fire-header {
@@ -22,5 +25,49 @@
     }
     @include desktop {
         font-size: 5rem;
+    }
+}
+
+.fire-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    flex-wrap: wrap;
+    height: 25vh;
+    padding: 0;
+    margin: 0 auto;
+    flex-direction: row;
+}
+
+.fire-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40;
+    margin: 10;
+    margin-top: 5vh;
+    color: white;
+    text-shadow: rgba(color(grey), 0.5);
+    size: 7vh;
+    @include laptop{
+      font-size: 19px;
+    }
+}
+
+.button {
+    background-color: #caa658;
+    border: none;
+    color: white;
+    padding: 25px 5px;
+    width: 10vh;
+    height: 2.5vh;
+    display: inline;
+    border-radius: 10px;
+    box-shadow: 0 6px #5f5730;
+    .button-title{
+        font-size: 16px;
+        text-align: center;
+        margin-top: -1.3px;
     }
 }

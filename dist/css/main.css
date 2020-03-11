@@ -476,10 +476,13 @@ a {
 }
 
 .fire {
-  height: 60vh;
+  height: 50vh;
   position: relative;
   border-radius: 5rem;
   margin-bottom: 1rem;
+  border-style: inset;
+  border-width: 1vh;
+  border-color: rgba(126, 91, 40, 0.5);
 }
 
 .fire-header {
@@ -508,6 +511,72 @@ a {
   .fire-header {
     font-size: 5rem;
   }
+}
+
+.fire-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 25vh;
+  padding: 0;
+  margin: 0 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.fire-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40;
+  margin: 10;
+  margin-top: 5vh;
+  color: white;
+  text-shadow: rgba(194, 185, 171, 0.5);
+  size: 7vh;
+}
+
+@media (min-width: 1100px) {
+  .fire-about {
+    font-size: 19px;
+  }
+}
+
+.button {
+  background-color: #caa658;
+  border: none;
+  color: white;
+  padding: 25px 5px;
+  width: 10vh;
+  height: 2.5vh;
+  display: inline;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 6px #5f5730;
+          box-shadow: 0 6px #5f5730;
+}
+
+.button .button-title {
+  font-size: 16px;
+  text-align: center;
+  margin-top: -1.3px;
 }
 
 html {
