@@ -2,7 +2,8 @@
 
 .fire {
     height: 50vh;
-    position: relative;
+    display: flex;
+    margin: 7vh;
     border-radius: 5rem;
     margin-bottom: 1rem;
     border-style: inset;
@@ -37,6 +38,9 @@
     padding: 0;
     margin: 0 auto;
     flex-direction: row;
+    @include tablet{
+        margin-top: -5px;
+    }
 }
 
 .fire-about {
@@ -44,9 +48,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 40;
+    padding: 15;
     margin: 10;
-    margin-top: 5vh;
     color: white;
     text-shadow: rgba(color(grey), 0.5);
     size: 7vh;

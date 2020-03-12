@@ -120,10 +120,11 @@
 }
 
 .activity {
-  height: 100vh;
+  height: 90vh;
   position: relative;
+  margin-top: 7vh;
+  margin-bottom: -7vh;
   border-radius: 5rem;
-  margin-bottom: 1rem;
 }
 
 .activity-heading {
@@ -157,7 +158,7 @@
 .cards-container {
   padding: 0;
   border: 0;
-  height: 100vh;
+  height: 90vh;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -168,18 +169,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media (min-width: 600px) {
-  .cards-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
+  /*@include phone {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }*/
 }
 
 @media (min-width: 900px) {
@@ -351,10 +344,10 @@
 }
 
 .travel {
-  height: 60vh;
+  height: 40vh;
   position: relative;
   border-radius: 5rem;
-  margin-bottom: 1rem;
+  margin: 7vh;
 }
 
 .travel-heading {
@@ -477,7 +470,10 @@ a {
 
 .fire {
   height: 50vh;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 7vh;
   border-radius: 5rem;
   margin-bottom: 1rem;
   border-style: inset;
@@ -533,6 +529,12 @@ a {
           flex-direction: row;
 }
 
+@media (min-width: 900px) {
+  .fire-content {
+    margin-top: -5px;
+  }
+}
+
 .fire-about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -546,9 +548,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40;
+  padding: 15;
   margin: 10;
-  margin-top: 5vh;
   color: white;
   text-shadow: rgba(194, 185, 171, 0.5);
   size: 7vh;

@@ -1,10 +1,11 @@
 @import "_variables.scss";
 
 .activity {
-    height: 100vh;
+    height: 90vh;
     position: relative;
+    margin-top: 7vh;
+    margin-bottom: -7vh;
     border-radius: 5rem;
-    margin-bottom: 1rem;
 }
 
 .activity-heading {
@@ -28,15 +29,15 @@
 .cards-container {
     padding: 0;
     border: 0;
-    height: 100vh;
+    height: 90vh;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    @include phone {
+    /*@include phone {
         flex-direction: column;
         justify-content: space-evenly;
-    }
+    }*/
     @include tablet {
         flex-direction: column;
         justify-content: space-evenly;
